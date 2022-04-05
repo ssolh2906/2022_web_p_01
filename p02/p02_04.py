@@ -1,6 +1,5 @@
 # 중첩함수
 import math
-from operator import le
 
 def stddev(*args):
     def mean():
