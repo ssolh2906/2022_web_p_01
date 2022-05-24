@@ -7,4 +7,4 @@ from .models import Post
 def post_list(request):
     # return render(request, 'blog/post_list.html', {})
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/p07_post_list.html', {'posts': posts})  # {내부는 매개변수}
+    return render(request, 'blog/p08_post_list.html', {'posts': posts})  # {내부는 매개변수}
